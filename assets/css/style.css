@@ -1,0 +1,111 @@
+@import url("reset.css");
+
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-desktop {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo-principal h1 {
+  margin-bottom: 2rem;
+}
+
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	color:#fff;	
+  pointer-events:none;
+	transition: all 0.5s ease-in-out;
+}
+
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+
+.input-container input:focus{ 
+  border:none;	
+  outline:none;
+  border-bottom:1px solid #77C5F5;	
+}
+
+.btn{
+	color:rgb(41, 40, 40);
+	background-color:#77C5F5;
+	outline: none;
+  border: 0;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin:5px 0 10px 0;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-16px;
+	font-size:16px;
+}
+
+table {
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th {
+  width: 25%;
+  background: rgb(94, 91, 91);
+}
+
+td {
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background: #747272;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px){
+  .logo-desktop {
+    width: 50%;
+  }
+}
